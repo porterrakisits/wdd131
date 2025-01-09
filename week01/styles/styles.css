@@ -11,9 +11,8 @@ header {
 
 nav {
     grid-column: 1 / 4;
-    display: flex;
-	padding: 2rem;
-	max-width: 80%;
+    background-color: aliceblue;
+    padding: 2rem;
 }
 
 
