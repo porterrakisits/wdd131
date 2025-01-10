@@ -73,17 +73,22 @@ main {
     display: grid;
     grid-template: auto;
     background-color: skyblue;
-    padding: 2rem;
+    padding: 5rem;
+    border: solid;
+    height: 60%;
 }
 
 #one {
-    grid-column: 1 / 2 ;
+    grid-row: 1 / 2 ;
+    margin: 1fr;
+    border: solid black;
 }
 
 #two {
-    grid-column: 1 / 2 ;
+    grid-row: 1 / 2 ;
+    margin: 1fr;
+    border: solid black;
 }
-
 
 
 
