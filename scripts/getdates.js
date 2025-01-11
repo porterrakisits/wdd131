@@ -1,6 +1,3 @@
-// getdates.js
-
-// Function to get the current year for the copyright
 function displayCurrentYear() {
     const currentYear = new Date().getFullYear(); // Get current year
     const yearSpan = document.getElementById('current-year'); // Find the span element
