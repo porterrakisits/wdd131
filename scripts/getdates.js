@@ -9,9 +9,10 @@ function displayCurrentYear() {
 
 // Function to display the last modified date of the document
 function displayLastModifiedDate() {
-    const lastModifiedDate = document.lastModified; // Get the last modified date of the document
+    const lastModifiedDate = new Date(document.lastModified); // Get the last modified date of the document
+    const formattedDate = lastModifiedDate.toLocaleDateString();
     const modifiedParagraph = document.getElementById('lastModified'); // Corrected the id here
-    modifiedParagraph.textContent = `Last modified on: ${lastModifiedDate}`; // Set the content to the last modified date
+    modifiedParagraph.textContent = `Last modified on: ${formattedDate}`; // Set the content to the last modified date
 }
 
 // Execute both functions when the document is ready
