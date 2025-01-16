@@ -1,0 +1,108 @@
+@media (max-width: 740px) {
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+    /* This is the CSS for the hamberger menu button in the small screen */
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❌";
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        list-style: none;
+        background-color: #333;
+        color: #fff;
+        display: none;
+    }
+
+    .navigation a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+    .navigation a:hover {
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+    }
+
+    /* when the button is clicked - the open class is toggled (added/removed) */
+    .open a {
+        display: block;
+    }
+
+    .active::before { 
+        content: "📍";  /* just a wayfinding symbol for the user */
+    }
+
+
+
+
+
+
+
+
+
+    main { 
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+
+
+    figcaption {
+        text-align: center;
+    }
+
+
+
+    footer {
+        text-align: center;
+        background-color: blanchedalmond;
+        padding: 15px;
+    }
+
+}
