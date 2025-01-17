@@ -1,4 +1,4 @@
-@media (min-width: 740px) {
+@media (min-width: 1100px) {
     h1 {
         text-align: center;
         margin: 0;
@@ -16,6 +16,7 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        background-color: lightblue;
     }
 
     #menu {
@@ -23,8 +24,8 @@
     }
 
     nav {
-        background-color: beige;
-        width: 60%
+        background-color: #40553c;
+        width: 60%;
     }
 
     nav ul {
@@ -40,13 +41,21 @@
     }
 
     nav a {
+        display: block;
         text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #f0fbf4;
     }
 
     nav a:hover {
-        border: solid black;
-        padding: 5px;
-        background-color: antiquewhite;
+        display: block;
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+        text-align: center;
     }
 
     main { 
@@ -69,7 +78,7 @@
 
     footer {
         text-align: center;
-        background-color: blanchedalmond;
+        background-color: lightblue;
         padding: 15px;
     }
 
