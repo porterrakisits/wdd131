@@ -1,10 +1,30 @@
+:root {
+    --primary-color: rgb(128, 188, 220);
+    --secondary-color: rgb(213, 156, 91);
+}
 
+header {
+    border: solid black;
+    background-color: var(--primary-color);
+}
 
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: solid black;
+}
 
+div {
+    border: solid black;
+}
 
+section {
+    background-color: beige;
+    padding: 50px 0;
+}
 
 footer {
     text-align: center;
-    background-color: lightblue;
+    background-color: var(--primary-color);
     padding: 15px;
 }
