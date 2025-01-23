@@ -29,7 +29,7 @@
     section {
         position: absolute;
         padding: 50px 0;
-        background-color: rgba(255, 255, 255, 0.7); /* Optional: Semi-transparent background for readability */
+        background-color: rgba(255, 255, 255, 0.7); 
         z-index: 2; /* Ensure the sections are on top of the image */
     }
 
@@ -40,8 +40,22 @@
     }
 
     ul {
-        padding-left: 20px;
-        list-style-type: none;
+        list-style-type: none;  
+        padding: 0;
+    }
+    
+    ul li {
+        display: flex; 
+        justify-content: space-between; 
+        padding: 5px 0; 
+    }
+    
+    ul li::after {
+        content: ''; 
+        flex-grow: 1; 
+        border-bottom: 1px solid var(--secondary-color); 
+        margin-left: 10px;
+        align-self: center; 
     }
 
     footer {
@@ -60,17 +74,19 @@
     .section_one {
         border: solid orange;
         padding: 1rem;
-        font-size: 1.2rem;
-        top: 50px; /* Adjust to position it where you want vertically */
-        left: 50px; /* Center it horizontally */
+        font-size: 1rem;
+        top: 50px; 
+        left: 50px; 
+        width: 250px;
     }
 
     .section_two {
         border: solid orange;
         padding: 1rem;
         font-size: 1.2rem;
-        bottom: 50px; /* Adjust to position it where you want vertically */
-        right: 50px; /* Center it horizontally */
+        bottom: 50px; 
+        right: 50px; 
+        width: 200px;
     }
 
     .hero {
@@ -90,12 +106,6 @@
         display: none;
     }
   
-    
-    
-
-
-
-
 }
 
 
