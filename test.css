@@ -1,0 +1,76 @@
+:root {
+    --primary-color: rgb(128, 188, 220);
+    --secondary-color: rgb(213, 156, 91);
+}
+
+header {
+    border: solid black;
+    background-color: var(--primary-color);
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: solid black;
+    position: relative; /* Needed for positioning child elements (sections) */
+}
+
+div {
+    border: solid black;
+    position: relative; /* Allow positioning child elements (sections) over this div */
+}
+
+.hero {
+    position: relative; /* Ensures the sections are positioned relative to the image */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Ensures the image covers the entire container */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure the image is at the bottom layer */
+}
+
+section {
+    position: absolute; /* Float the sections on top of the image */
+    top: 50%; /* Adjust to position it where you want vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%); /* Correct for centering */
+    padding: 50px 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: Semi-transparent background for readability */
+    z-index: 2; /* Ensure the sections are on top of the image */
+}
+
+h2 {
+    padding: 0px 0px 0px 20px;
+    margin: 0px;
+    background-color: var(--secondary-color);
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 15px;
+}
+
+/*         Classes           */
+.section_one {
+    border: solid orange;
+    padding: 1rem;
+    font-size: 1.4rem;
+    
+}
+
+.section_two {
+    border: solid magenta;
+    padding: 1rem;
+    font-size: 1.4rem;
+}

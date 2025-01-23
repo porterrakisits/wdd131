@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Porter Rakists">
     <meta name="description" content="Page about a place">
-    <title>Document</title>
+    <title>St. George, Utah!</title>
     <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place_large.css">
     <script src="scripts/place.js" defer></script>
 </head>
 <body>
@@ -14,17 +15,32 @@
         <h1>St. George, Utah</h1>
     </header>
     <main>
-        <div>
+        <div class="hero">
             <picture>
-                <source srcset="" media="">
-                <img src="" alt="">
+                <source srcset="../images/st_george_hero_large.webp" media="(min-width: 500)">
+                <img src="images/st_george_hero_small.webp" alt="St. George, Utah" width="500" height="auto">
             </picture>
         </div>
-        <section>
-            adsf
+        <section class="section_one">
+            <h2>Data</h2>
+            <ul>
+                <li>Area: 60.4 square miles (156.6 km²)</li>
+                <li>Population: 100,000</li>
+                <li>Languages: English</li>
+                <li>Currency: US Dollar (USD)</li>
+                <li>Time zone: UTC -6</li>
+                <li>Calling code: +1</li>
+                <li>Internet tld: .us</li>
+            </ul>
         </section>
-        <section>
-            adsf
+        <section class="section_two">
+            <h2>Weather</h2>
+            <ul>
+                <li>Temperature: 46 °F</li>
+                <li>Conditions: Clear</li>
+                <li>Wind: 11mph</li>
+                <li id="windChill">Wind Chill:</li>
+            </ul>
         </section>
     </main>
     <footer>
@@ -39,3 +55,7 @@
     </footer>
 </body>
 </html>
+
+
+
+

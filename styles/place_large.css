@@ -1,0 +1,103 @@
+@media (min-width: 500px) {
+
+    :root {
+        --primary-color: rgb(128, 188, 220);
+        --secondary-color: rgb(213, 156, 91);
+    }
+
+    header {
+        border: solid black;
+        background-color: var(--primary-color);
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: 1fr;
+        border: solid black;
+        position: relative;
+        background-image: url('../images/st_george_hero_large.webp');
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed; 
+    }
+
+    div {
+        border: solid black;
+        position: relative;
+    }
+
+    section {
+        position: absolute;
+        padding: 50px 0;
+        background-color: rgba(255, 255, 255, 0.7); /* Optional: Semi-transparent background for readability */
+        z-index: 2; /* Ensure the sections are on top of the image */
+    }
+
+    h2 {
+        padding: 0px 0px 0px 20px;
+        margin: 0px;
+        background-color: var(--secondary-color);
+    }
+
+    ul {
+        padding-left: 20px;
+        list-style-type: none;
+    }
+
+    footer {
+        text-align: center;
+        background-color: var(--primary-color);
+        padding: 15px;
+    }
+
+
+
+
+
+
+
+    /*         Classes           */
+    .section_one {
+        border: solid orange;
+        padding: 1rem;
+        font-size: 1.2rem;
+        top: 50px; /* Adjust to position it where you want vertically */
+        left: 50px; /* Center it horizontally */
+    }
+
+    .section_two {
+        border: solid orange;
+        padding: 1rem;
+        font-size: 1.2rem;
+        bottom: 50px; /* Adjust to position it where you want vertically */
+        right: 50px; /* Center it horizontally */
+    }
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 700px; /* Set a height for the image container */
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: none;
+    }
+  
+    
+    
+
+
+
+
+}
+
+
+
+

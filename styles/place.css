@@ -1,30 +1,77 @@
-:root {
-    --primary-color: rgb(128, 188, 220);
-    --secondary-color: rgb(213, 156, 91);
+@media (max-width: 500px) {
+
+    :root {
+        --primary-color: rgb(128, 188, 220);
+        --secondary-color: rgb(213, 156, 91);
+    }
+
+    header {
+        border: solid black;
+        background-color: var(--primary-color);
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        border: solid black;
+    }
+
+    div {
+        border: solid black;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        justify-content: center;
+    }
+
+    h2 {
+        padding: 0px 0px 0px 20px;
+        margin: 0px;
+        background-color: var(--secondary-color);
+    }
+
+    ul {
+        padding-left: 20px;
+        list-style-type: none;
+    }
+
+    footer {
+        text-align: center;
+        background-color: var(--primary-color);
+        padding: 15px;
+    }
+
+
+
+
+
+
+
+    /*         Classes           */
+    .section_one {
+        border: solid orange;
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .section_two {
+        border: solid orange;
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
 }
 
-header {
-    border: solid black;
-    background-color: var(--primary-color);
-}
 
-main {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    border: solid black;
-}
 
-div {
-    border: solid black;
-}
 
-section {
-    background-color: beige;
-    padding: 50px 0;
-}
-
-footer {
-    text-align: center;
-    background-color: var(--primary-color);
-    padding: 15px;
-}
