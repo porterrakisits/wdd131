@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+}
+
+img {
+    display: block;
+    opacity: 0; 
+    animation: fadeIn 1s forwards; 
+}
+
+/* Define the fade-in effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Image starts fully transparent */
+        filter: brightness(0); /* Image is dark (black) */
+    }
+    100% {
+        opacity: 1; /* Image ends fully visible */
+        filter: brightness(1); /* Normal brightness */
+    }
+}
+
+
