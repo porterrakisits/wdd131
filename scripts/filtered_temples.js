@@ -161,9 +161,6 @@ smalltemplelink.addEventListener("click", () => {
 })
 
 
-document.querySelector("#home").addEventListener("click", () => {
-    createTempleCard(temples);
-});
 
 
 function createTempleCard(temples) {
