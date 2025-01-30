@@ -1,0 +1,106 @@
+@media (min-width: 1100px) {
+    h1 {
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    h2 {
+        text-align: center;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        background-color: lightblue;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        background-color: #40553c;
+        width: 60%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+
+
+    nav li{
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #f0fbf4;
+    }
+
+    nav a:hover {
+        display: block;
+        background-color: #bbb;
+        color: #333;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    main { 
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        margin: 25px 5px;
+    }
+
+    
+
+    img {
+        width: 400px;
+        height: 250px;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+
+
+
+    footer {
+        text-align: center;
+        background-color: lightblue;
+        padding: 15px;
+    }
+
+    .temple-card {
+        border: 1px solid #ddd;  
+        border-radius: 8px;       
+        padding: 16px;            
+        margin: 16px;             
+        background-color: #fff;   
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+}
