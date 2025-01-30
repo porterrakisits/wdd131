@@ -129,6 +129,7 @@ const temples = [
 
 createTempleCard(temples);
 
+
 const oldtemplelink = document.querySelector("#oldtemple");
 oldtemplelink.addEventListener("click", () => {
     let oldtemple = temples.filter(temple => {
@@ -151,7 +152,6 @@ largetemplelink.addEventListener("click", () => {
     let largeTemples = temples.filter(temple => temple.area > 90000);
     createTempleCard(largeTemples);
 })
-
 
 
 const smalltemplelink = document.querySelector("#smalltemple")
