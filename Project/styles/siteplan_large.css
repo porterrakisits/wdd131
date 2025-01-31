@@ -16,7 +16,7 @@
 
 :root {
     --primary-color: rgb(162, 208, 234);   /* alt color 128, 188, 220 */
-    --secondary-color: rgb(213, 156, 91);
+    --secondary-color: rgb(230, 183, 129);   /* alt color 213, 156, 91 */
 }
 
 
@@ -61,6 +61,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10px;
+    background-color: var(--secondary-color);
   }
 
   section {
