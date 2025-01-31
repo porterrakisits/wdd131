@@ -1,0 +1,32 @@
+
+/* FONTS */
+.dm-serif-text-regular {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
+.roboto_thin300 {
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: italic;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+:root {
+    --primary-color: rgb(128, 188, 220);
+    --secondary-color: rgb(213, 156, 91);
+}
+
+
+@media (max-width: 400px) {
+
+
+    header {
+      border: solid black;
+      background-color: antiquewhite;
+    }
+  
+  
+  }
