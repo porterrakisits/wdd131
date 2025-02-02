@@ -20,7 +20,7 @@
 }
 
 
-@media (min-width: 400px) {
+@media (min-width: 401px) {
 
   nav ul li {
     list-style-type: none;
@@ -34,6 +34,10 @@
     background-color: var(--primary-color);
     border: solid black;
     padding: 10px;
+  }
+
+  #menu {
+    display: none;
   }
 
   ul {
