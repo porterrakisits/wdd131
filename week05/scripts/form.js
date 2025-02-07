@@ -46,3 +46,42 @@ const products = [
     }
   ];
 
+
+
+
+
+function populateProductOptions() {
+    const productSelect = document.getElementById("products"); 
+  
+      
+    products.forEach(product => {
+        const option = document.createElement("option");
+        option.value = product.id; 
+        option.textContent = product.name; 
+        productSelect.appendChild(option); 
+    });
+  }
+  
+function incrementReviewCounter() {
+    let reviewCount = parseInt(localStorage.getItem("reviewCount") || "0"); 
+      
+    reviewCount += 1;
+      
+    localStorage.setItem("reviewCount", reviewCount);
+  
+    const reviewCounter = document.getElementById("review_data");
+    reviewCounter.textContent = `Total Reviews Submitted: ${reviewCount}`;
+  }
+  
+
+window.onload = function() {
+    populateProductOptions(); 
+    if (window.location.pathname.includes("review.html")) {
+          incrementReviewCounter(); 
+    }
+  }
+
+
+
+
+
