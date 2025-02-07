@@ -3,24 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="author" content="Porter Rakists">
+    <meta name="description" content="A page where you can submit a form to review different products. ">
+    <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
 </head> 
 <body>
-    <head>
+    <header>
         <h1>Product Review</h1>
-    </head>
+    </header>
     <main>
-        <form action="">
+        <form action="review.html" method="get">
 
 
-            
-            <!-- Select Product -->
+
+            <!-- select product -->
              <div>
                 <label for="products">Product Name</label>
-                <select name="products" id="select" required>
-                    <option value="Select" disabled selected>Select a Product...</option>
+                <select name="products" id="products" required>
+                    <option value="" disabled selected>Select a Product...</option>
                     <option value="flux">Flux Capacitor</option>
                     <option value="power">Power laces</option>
                     <option value="time">Time Circuits</option>
@@ -31,22 +33,24 @@
 
 
 
-            <!-- Rating      do radio button -->
-            <label for="rating">overall rating</label>
-            <input type="range" list="rating" id="rating" name="rating"  min="0" max="5" value="0" step="1" list="rating" required>
-            <datalist id="rating">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </datalist>
+            <!-- rating -->
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">☆</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">☆☆</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">☆☆☆</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">☆☆☆☆</label>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">☆☆☆☆☆</label>
 
 
 
-            <!-- Date of installation -->
+
+            <!-- date of installation -->
             <div>
-                <label for=""></label>
+                <label for="installation"></label>
                 <input type="date" name="installation" id="installation" required>
             </div>
 
@@ -68,15 +72,15 @@
 
             <!-- written review -->
             <div>
-                <label for="written">Written Review</label>
-                <input type="textarea" name="written" id="written">
+                <label for="written">Written Review <span id="optional1">(optional)</span></label>
+                <input type="text" name="written" id="written">
             </div>
 
 
 
-            <!-- user Name -->
+            <!-- user name -->
             <div>
-                <label for="user">User Name</label>
+                <label for="user">User Name <span id="optional2">(optional)</span></label>
                 <input type="text" id="user" name="user">
             </div>
 
@@ -103,3 +107,7 @@
     </footer>
 </body>
 </html>
+
+
+
+
