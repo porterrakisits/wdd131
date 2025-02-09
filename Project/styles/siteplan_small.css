@@ -144,7 +144,9 @@
         width: 200px;
         padding: 10px;
     }
-    
+
+
+
     
 
     footer {
@@ -153,6 +155,84 @@
         padding: 15px;
     }
   
+
+
+
+
+
+
+
+
+
+
+        /*     contact page css    */
+
+    #contact_main {
+        height: 35rem;
+        background-color: rgb(213, 156, 91, 0.5);
+    }
+
+    #contact_section {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;  
+        text-align: center;  
+        height: 100vh;  
+    }
+
+    section a{
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    section a:hover {
+        color: blue;
+    }
+    
+    h3 {
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: rgb(128, 188, 220, 0.7);
+        border: solid gray 1px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px gray;
+        padding: 5px;
+    }
+
+    #contact_section {
+        height: 30px;
+    }
+
+    #message {
+        width: 75%;
+        height: 90px;
+    }
+
+    .contact_div {
+        background-color: rgb(173, 216, 230, 0);
+    }
+
+    input[type="submit"] {
+        background-color: #3d9b40;  
+        color: white;  
+        border: none;  
+        padding: 10px 20px;  
+        font-size: 16px;  
+        cursor: pointer;  
+        border-radius: 5px;   
+    }
+    
+    
+    input[type="submit"]:hover {
+        background-color: #45a049;  
+    }
+    
   
   }
 

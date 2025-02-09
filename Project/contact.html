@@ -26,14 +26,58 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
-            <h3>Reach out to me!</h3>
-            <p>Reach out to me... blah blah blah.... i would love to make your website.... blah blah blah</p>
+    <main id="contact_main">
+        <section id="contact_section">
+            <h3>Contact me!</h3>
+            <p>Feel free to reach out to me about anything! I look forward to hearing from you!</p>
+            <p>✉️ <a href="mailto:porter.rak@gmail.com">porter.rak@gmail.com</a></p>
+            <p> <a href="https://www.linkedin.com/in/porter-rakisits-45530934a?trk=people-guest_people_search-card">Linkedin account</a></p>
         </section>
         <aside>
-            <h4>Send me a message. </h4>
-            <p>asdfasdf</p>
+            <h3>Send me a message! </h3>
+            <form action="review.html" method="get">
+
+
+
+                <!-- enter name-->
+                 <div class="contact_div">
+                    <label for="name">Full Name</label required>
+                    <input type="text" name="name" id="name">
+                 </div>
+    
+    
+    
+                <!-- enter email -->
+                <div class="contact_div">
+                    <label for="email">Email Address</label>
+                    <input type="text" name="email" id="email">
+                </div>
+    
+    
+    
+                <!-- endter phone -->
+                <div class="contact_div">
+                    <label for="phone_number">Phone Number<span id="optional1">(optional)</span></label>
+                    <input type="text" id="phone_number" name="phone_number">
+                </div>
+
+
+                <!-- enter message -->
+                <div class="contact_div"> 
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message">
+                </div>
+    
+    
+    
+                <!-- submit button -->
+                <div class="contact_div">
+                    <input type="submit" value="Submit Message!">
+                </div>
+    
+    
+    
+            </form>
         </aside>
     </main>
     <footer>
