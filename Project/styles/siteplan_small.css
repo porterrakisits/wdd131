@@ -19,7 +19,12 @@
     --secondary-color: rgb(213, 156, 91);
 }
 
-
+.icon {
+    display: flex;
+    justify-content: center; 
+    gap: 55px; 
+    padding: 20px 0; 
+}
 
 
 
@@ -122,7 +127,6 @@
     }
 
     aside p a:hover {
-        background-color: var(--secondary-color);
         text-decoration: none;
         color: black;
         font-weight: 700;
@@ -168,7 +172,7 @@
         /*     contact page css    */
 
     #contact_main {
-        height: 35rem;
+        height: 36rem;
         background-color: rgb(213, 156, 91, 0.5);
     }
 
@@ -177,7 +181,7 @@
         flex-direction: column;  
         align-items: center;  
         text-align: center;  
-        height: 100vh;  
+        height: 100vh;
     }
 
     section a{
@@ -188,6 +192,18 @@
 
     section a:hover {
         color: blue;
+    }
+
+    .email_icon {
+        font-size: 30px;
+        margin-right: 10px;
+        vertical-align: middle;
+    }
+
+    .fab.fa-linkedin {
+        font-size: 18px;  
+        margin-right: 5px;  
+        vertical-align: middle;  
     }
     
     h3 {
@@ -234,6 +250,31 @@
     }
     
   
+
+
+
+
+
+
+
+
+    .resume_main {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        background-color: rgb(213, 156, 91, 0.5);
+      }
+      
+      .resume_section {
+        grid-row: 1/4;
+      }
+      
+      .resume_aside {
+        grid-row: 4/5;
+      }
+
+
+
+
   }
 
 
