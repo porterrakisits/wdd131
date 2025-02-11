@@ -26,3 +26,15 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+
+
+
+const form = document.querySelector('form');
+form.addEventListener('submit', function(event) {
+    const name = document.getElementById('name').value;
+    if (!name) {
+        alert('Please enter your name.');
+        event.preventDefault(); 
+    }
+});
